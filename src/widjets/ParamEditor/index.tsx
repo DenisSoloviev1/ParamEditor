@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 100%;
-  width: 450px;
-  margin: 20px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +97,7 @@ const ParamEditor: React.FC<Props> = ({ params, model }) => {
     );
   };
 
+  //выводит сохранённую модель в консоль
   const getModel = (): Model => ({
     paramValues,
   });
